@@ -1,0 +1,112 @@
+/* RESPONSIVE CSS GRIDS */
+/* .grid {
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    grid-auto-columns: calc((100vh - 3em) / 4);
+    grid-auto-flow: column;
+    grid-gap: 1em;
+    height: 100vh;
+    
+}
+
+.grid-item:nth-child(3n){
+    background-color: green;
+}
+.grid-item:nth-child(3n + 2){
+    background-color: red;
+}
+ */
+
+
+ /* VERTICALLY ALIGN WITH FLEX BOX */
+
+ /* .align-vertically{
+     background: black;
+     color: #eff542;
+     display: flex;
+     align-items: center;
+     height: 200px;
+ } */
+/* SVG  FOR ICONS AND LOGOS */
+
+/* 
+.element{
+  background-image: url(assets/image1.svg);
+}  doubt*/
+
+/* MASKING */
+
+
+/* .masked{
+    -webkit-mask-image: url(assets/logo.png);
+    mask-image: url(assets/logo.png);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat; 
+} */
+
+/* SHAPE OUTSIDE */
+/* body{
+    display: flex;
+}
+.shape-outside{
+    padding-right: 10px;
+    
+}
+.shape-outside__circle{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #DC143C;
+    margin: 25px 25px 5px 0;
+    float: left;
+    shape-outside: circle();
+
+    
+} */
+
+/* IMG ZOOM ON HOVER */
+/* img:hover{
+    transform: scale(1.9);
+} */
+
+/* SCROLL SNAPPING */
+/* .y-scrolling{
+    scroll-snap-type: y mandatory;
+} */
+
+/* VARIABLE FONTS */
+
+
+/* TEXT ANIMATIONS */
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: clamp(2rem,2.8vw,5rem);
+    font-family: Raleway;
+    font-weight: bold;
+}
+.typewriter{
+    width: 22ch;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid #212121;
+    animation: cursor 1s step-start infinite,
+        text 5s steps(18) alternate infinite;
+}
+@keyframes cursor{
+    0%,100%{
+        border-color: #212121;
+
+    }
+}
+@keyframes text{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 22ch;
+    }
+}
